@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { experiences } from "@/data/portfolio";
 
@@ -15,6 +16,7 @@ const cardVariants = {
 function ExperienceCard({
   post,
   companyName,
+  companyUrl,
   mode,
   location,
   startDate,
@@ -48,9 +50,20 @@ function ExperienceCard({
                   {mode}
                 </span>
               </h3>
-              <p className="mt-1 text-lg font-medium text-gray-400">
-                {companyName}
-              </p>
+              {companyUrl ? (
+                <Link
+                  href={companyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 text-lg font-medium text-gray-400 transition-colors hover:text-purple-400"
+                >
+                  {companyName}
+                </Link>
+              ) : (
+                <p className="mt-1 text-lg font-medium text-gray-400">
+                  {companyName}
+                </p>
+              )}
             </div>
           </div>
 

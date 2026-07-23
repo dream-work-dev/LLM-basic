@@ -116,6 +116,7 @@ export const achievements = [
 export type ExperienceItem = {
   post: string;
   companyName: string;
+  companyUrl?: string;
   mode: string;
   location: string;
   startDate: string;
@@ -129,6 +130,7 @@ export const experiences: ExperienceItem[] = [
   {
     post: "Senior Full Stack Engineer",
     companyName: "Almedia",
+    companyUrl: "https://freecash.com/en",
     mode: "Full Time",
     location: "Dublin, Ireland",
     startDate: "Feb 2022",
@@ -137,18 +139,14 @@ export const experiences: ExperienceItem[] = [
     logoColor: "from-emerald-500 to-teal-600",
     description: [
       "Built product features for Freecash using React, Next.js, TypeScript, and server-rendered workflows across offer discovery, reward tracking, missions, leaderboards, and account experiences.",
-      "Developed Node.js and Python FastAPI services for reward attribution, balance updates, payout eligibility, and transaction state changes across high-volume user activity.",
-      "Implemented WebSocket-based earning confirmations and balance synchronization so users could see reward outcomes immediately after completing offers.",
       "Integrated PayPal, Stripe, crypto payout providers, and gift card APIs with fraud checks, eligibility rules, transactional safeguards, and payout status visibility.",
-      "Designed APIs and data flows connecting offer partners, tracking callbacks, user events, reward ledgers, and internal operations tools.",
-      "Implemented Amplitude-backed A/B tests across onboarding, offer ranking, reward presentation, and promotional campaigns.",
-      "Added Datadog and Sentry monitoring for API errors, GraphQL failures, payout exceptions, and revenue-critical workflows.",
       "Built AI-assisted support and investigation workflows using RAG patterns, LLM APIs, transaction history, and user behavior signals.",
     ],
   },
   {
     post: "Full Stack Engineer",
     companyName: "Deloitte",
+    companyUrl: "https://www.deloitte.com/",
     mode: "Full Time",
     location: "Dublin, Ireland",
     startDate: "Nov 2018",
@@ -157,16 +155,14 @@ export const experiences: ExperienceItem[] = [
     logoColor: "from-green-600 to-lime-500",
     description: [
       "Delivered regulatory reporting platforms for financial-services clients using React, TypeScript, Python, and Java Spring Boot.",
-      "Built transaction reconciliation dashboards for operations and compliance teams to investigate mismatched records and audit evidence.",
       "Implemented secure digital onboarding journeys with OAuth2/SAML SSO, MFA, document upload, reviewer workflows, and status notifications.",
-      "Engineered REST APIs and microservices for case processing, approval routing, audit logging, and role-based access control.",
-      "Delivered cloud deployments on Azure App Services, Azure Functions, AWS EC2, S3, and RDS with Docker-based build and release pipelines.",
       "Built React and Redux data visualization screens with drill-down KPIs, risk indicators, and operational reporting for audit users.",
     ],
   },
   {
     post: "Mid Level Full Stack Developer",
     companyName: "Annertech",
+    companyUrl: "https://www.annertech.com/",
     mode: "Full Time",
     location: "Dublin, Ireland",
     startDate: "Jan 2016",
@@ -177,13 +173,12 @@ export const experiences: ExperienceItem[] = [
       "Delivered client-facing web platforms for public-sector, nonprofit, education, and commercial customers.",
       "Contributed to modernization of PHP and CMS-driven platforms by adding React, Node.js, and Python services.",
       "Built interactive front-end experiences with React, TypeScript, Vue, responsive layouts, and reusable components.",
-      "Developed backend APIs with Python Flask and Node.js for forms, user accounts, document workflows, and integrations.",
-      "Supported AWS-based hosting using EC2, S3, CloudFront, and RDS, contributing to CI/CD improvements.",
     ],
   },
   {
     post: "Junior Full Stack Developer",
     companyName: "Annertech",
+    companyUrl: "https://www.annertech.com/",
     mode: "Full Time",
     location: "Dublin, Ireland",
     startDate: "Jun 2015",
@@ -194,7 +189,6 @@ export const experiences: ExperienceItem[] = [
       "Supported development of CMS-backed websites and web applications for client projects.",
       "Built front-end interfaces with React, Vue, JavaScript, HTML5, and CSS3 with responsive behavior.",
       "Assisted backend development using PHP, Node.js, and Python for forms, user actions, and REST endpoints.",
-      "Helped improve site reliability through bug fixes, performance tuning, and regression testing.",
     ],
   },
   {
